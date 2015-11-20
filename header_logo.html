@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://188.166.86.195/" />
+<title>header_logo</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">header_logo</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<!--Top left logo (elemene, icon, text)-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.mdl-layout__drawer &gt; header.mdl-layout__header</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.mdl-layout__drawer-button &gt; i.material-icons</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.mdl-layout__header-row.mdl-layout__header-row_logo&gt; span.mdl-layout-title</td>
+	<td>Code Space</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://188.166.86.195/" />
+<title>navigation_employees</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">navigation_employees</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<!--Navigation left -->
+<!--Button "Employees" (element, icon, text, class-background present/not present, title) -->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=nav.mdl-navigation &gt; a[href $=&quot;/employees&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=nav.mdl-navigation &gt; a[href $=&quot;/employees&quot;] &gt; i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//a[contains(@href, '/employees')]</td>
+	<td>supervisor_account Employees</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=nav.mdl-navigation &gt; a[href $=&quot;/employees&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=nav.mdl-navigation &gt; a.mdl-navigation__link_current[href $=&quot;/employees&quot;] </td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=nav.mdl-navigation &gt; a.mdl-navigation__link_current[href $=&quot;/daily-meeting&quot;] </td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Employees | Code Space</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

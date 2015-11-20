@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://188.166.86.195/" />
+<title>header_button</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">header_button</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<!--Top header (element, text, menu buttons) -->
+<!--Top header-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.mdl-layout__header-row</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.mdl-layout-title</td>
+	<td>Dashboard</td>
+</tr>
+<!--Button "Profile"-->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.mdl-layout__header-row &gt; a[title=&quot;Profile&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mdl-layout__header-row &gt; a[title=&quot;Profile&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Profile | Code Space</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.mdl-layout-title</td>
+	<td>Profile</td>
+</tr>
+<!--Button "Setting" -->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.mdl-layout__header-row &gt; a[title=&quot;Settings&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.mdl-layout__header-row &gt; a[title=&quot;Settings&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Settings | Code Space</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.mdl-layout-title</td>
+	<td>Settings</td>
+</tr>
+<!--Button "Хер пойми" -->
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.mdl-layout__header-row &gt; button.mdl-js-ripple-effect</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
