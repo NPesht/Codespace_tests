@@ -17,7 +17,7 @@
 	<td></td>
 </tr>
 <!--Navigation left -->
-<!--Button "Daily meeting" (element, icon, text, class-background present/not present, title) -->
+<!--Button "Daily meeting" (element, icon, text, class-background present/not present, title, url) -->
 <tr>
 	<td>waitForElementPresent</td>
 	<td>css=nav.mdl-navigation &gt; a[href $=&quot;/daily-meeting&quot;]</td>
@@ -45,12 +45,17 @@
 </tr>
 <tr>
 	<td>assertElementNotPresent</td>
-	<td>css=nav.mdl-navigation &gt; a.mdl-navigation__link_current[href $=&quot;/team-dashboard&quot;] </td>
+	<td>css=nav.mdl-navigation &gt; a.mdl-navigation__link_current[href $=&quot;/dashboard&quot;] </td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForTitle</td>
 	<td>Daily meeting | Code Space</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyLocation</td>
+	<td>*/daily-meeting</td>
 	<td></td>
 </tr>
 </tbody></table>
