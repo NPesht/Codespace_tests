@@ -17,17 +17,19 @@
 	<td></td>
 </tr>
 <!--Navigation left -->
-<!--Button "Daily meeting" (element, icon, text, class-background present/not present, title, url) -->
+<!--Button "Daily meeting" (element) -->
 <tr>
 	<td>waitForElementPresent</td>
 	<td>css=nav.mdl-navigation &gt; a[href $=&quot;/daily-meeting&quot;]</td>
 	<td></td>
 </tr>
+<!--icon-->
 <tr>
 	<td>assertElementPresent</td>
 	<td>css=nav.mdl-navigation &gt; a[href $=&quot;/daily-meeting&quot;] &gt; i</td>
 	<td></td>
 </tr>
+<!--text-->
 <tr>
 	<td>assertText</td>
 	<td>//a[contains(@href, '/daily-meeting')]</td>
@@ -38,25 +40,35 @@
 	<td>css=nav.mdl-navigation &gt; a[href $=&quot;/daily-meeting&quot;]</td>
 	<td></td>
 </tr>
+<!--class-background present-->
 <tr>
 	<td>waitForElementPresent</td>
 	<td>css=nav.mdl-navigation &gt; a.mdl-navigation__link_current[href $=&quot;/daily-meeting&quot;] </td>
 	<td></td>
 </tr>
+<!--class-background Not present (button "Dashboard")-->
 <tr>
 	<td>assertElementNotPresent</td>
 	<td>css=nav.mdl-navigation &gt; a.mdl-navigation__link_current[href $=&quot;/dashboard&quot;] </td>
 	<td></td>
 </tr>
+<!--title-->
 <tr>
 	<td>waitForTitle</td>
 	<td>Daily meeting | Code Space</td>
 	<td></td>
 </tr>
+<!--url-->
 <tr>
 	<td>verifyLocation</td>
 	<td>*/daily-meeting</td>
 	<td></td>
+</tr>
+<!--header-text-->
+<tr>
+	<td>assertText</td>
+	<td>css=div.mdl-layout__header-row &gt; span.mdl-layout-title</td>
+	<td>Daily meeting</td>
 </tr>
 </tbody></table>
 </body>
